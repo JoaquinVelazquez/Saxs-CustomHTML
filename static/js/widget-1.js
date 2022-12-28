@@ -4,6 +4,9 @@ const video = document.querySelector(".contenedor-video")
 const header = document.querySelector("#header")
 //const contenido = document.querySelector(".ui-search-main")
 
+let favicon = document.querySelector("link[rel='shortcut icon']")
+favicon.href = 'https://i.postimg.cc/Y2G8dGpn/favicon.png';
+
 if (URLactual !== "/") {
     newsletter.classList.toggle("no-visible")
     video.classList.toggle("no-visible")
