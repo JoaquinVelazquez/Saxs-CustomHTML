@@ -4,8 +4,21 @@ const video = document.querySelector(".contenedor-video")
 const header = document.querySelector("#header")
 //const contenido = document.querySelector(".ui-search-main")
 
-let favicon = document.querySelector("link[rel='shortcut icon']")
-favicon.href = 'https://i.postimg.cc/Y2G8dGpn/favicon.png';
+// (function() {
+//     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+//     link.type = 'image/x-icon';
+//     link.rel = 'shortcut icon';
+//     link.href = 'https://iili.io/HjRJe3u.png';
+//     document.getElementsByTagName('head')[0].appendChild(link);
+//   })();
+//   function faviconIn(){
+//     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+//     link.type = 'image/x-icon';link.rel = 'shortcut icon';
+//     link.href = 'https://iili.io/HjRJe3u.png';
+//     document.getElementsByTagName('head')[0].appendChild(link)
+//   };
+  
+//   setTimeout(faviconIn,1000);
 
 if (URLactual !== "/") {
     newsletter.classList.toggle("no-visible")
@@ -52,13 +65,13 @@ if (URLactual !== "/") {
         submenuAccesorios.classList.toggle("visible");
     });
 
-    const btnSubmenuMayor = document.querySelector(".mayor");
-    const submenuMayor = document.querySelector(".submenuMayor");
+    // const btnSubmenuMayor = document.querySelector(".mayor");
+    // const submenuMayor = document.querySelector(".submenuMayor");
 
-    btnSubmenuMayor.addEventListener("click", function () {
-        btnSubmenuMayor.classList.toggle("rotacion");
-        submenuMayor.classList.toggle("visible");
-    });
+    // btnSubmenuMayor.addEventListener("click", function () {
+    //     btnSubmenuMayor.classList.toggle("rotacion");
+    //     submenuMayor.classList.toggle("visible");
+    // });
 
     //Menu Mobile
     const btnSubmenuSinteticos_mobile = document.querySelector(".sinteticos_mobile");
@@ -101,13 +114,13 @@ if (URLactual !== "/") {
         submenuAccesorios_mobile.classList.toggle("visible");
     });
 
-    const btnSubmenuMayor_mobile = document.querySelector(".mayor_mobile");
-    const submenuMayor_mobile = document.querySelector(".submenuMayor_mobile");
+    // const btnSubmenuMayor_mobile = document.querySelector(".mayor_mobile");
+    // const submenuMayor_mobile = document.querySelector(".submenuMayor_mobile");
 
-    btnSubmenuMayor_mobile.addEventListener("click", function () {
-        btnSubmenuMayor_mobile.classList.toggle("rotacion");
-        submenuMayor_mobile.classList.toggle("visible");
-    });
+    // btnSubmenuMayor_mobile.addEventListener("click", function () {
+    //     btnSubmenuMayor_mobile.classList.toggle("rotacion");
+    //     submenuMayor_mobile.classList.toggle("visible");
+    // });
 
     //contenido.classList.toggle("padding-top")
 } else {
@@ -152,13 +165,13 @@ if (URLactual !== "/") {
         submenuAccesorios.classList.toggle("visible");
     });
     
-    const btnSubmenuMayor = document.querySelector(".mayor");
-    const submenuMayor = document.querySelector(".submenuMayor");
+    // const btnSubmenuMayor = document.querySelector(".mayor");
+    // const submenuMayor = document.querySelector(".submenuMayor");
 
-    btnSubmenuMayor.addEventListener("click", function () {
-        btnSubmenuMayor.classList.toggle("rotacion");
-        submenuMayor.classList.toggle("visible");
-    });
+    // btnSubmenuMayor.addEventListener("click", function () {
+    //     btnSubmenuMayor.classList.toggle("rotacion");
+    //     submenuMayor.classList.toggle("visible");
+    // });
 
     //Menu Mobile
     const btnSubmenuSinteticos_mobile = document.querySelector(".sinteticos_mobile");
@@ -201,11 +214,11 @@ if (URLactual !== "/") {
         submenuAccesorios_mobile.classList.toggle("visible");
     });
 
-    const btnSubmenuMayor_mobile = document.querySelector(".mayor_mobile");
-    const submenuMayor_mobile = document.querySelector(".submenuMayor_mobile");
+    // const btnSubmenuMayor_mobile = document.querySelector(".mayor_mobile");
+    // const submenuMayor_mobile = document.querySelector(".submenuMayor_mobile");
 
-    btnSubmenuMayor_mobile.addEventListener("click", function () {
-        btnSubmenuMayor_mobile.classList.toggle("rotacion");
-        submenuMayor_mobile.classList.toggle("visible");
-    });
+    // btnSubmenuMayor_mobile.addEventListener("click", function () {
+    //     btnSubmenuMayor_mobile.classList.toggle("rotacion");
+    //     submenuMayor_mobile.classList.toggle("visible");
+    // });
 }

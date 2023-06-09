@@ -27,9 +27,13 @@
 
 <div class="contenedor-video">
   <div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/modujeb9seA" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/modujeb9seA"
+    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/modujeb9seA?autoplay=1><img src=https://img.youtube.com/vi/modujeb9seA/hqdefault.jpg alt='Video Saxs- SABEMOS DE MODA'><span>▶</span></a>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    title="Saxs- SABEMOS DE MODA"></iframe>
   </div>
   <div class="background">
     <div class="info-video">
@@ -153,6 +157,13 @@
             </a>
           </span>
 
+          {{!-- <span class="fashion-nav-footer__category">
+            <a href="#"
+              class="header--custom-text categorias-texto">
+              SAXS 20 AÑOS
+            </a>
+          </span> --}}
+
           <span class="fashion-nav-footer__category">
             <a href="/p/como-comprar" class="header--custom-text categorias-texto">
               Cómo Comprar
@@ -220,6 +231,7 @@
             <div class="nav-footer-about">
               <a href="{{{linkToMShopsLandingPage}}}" target="_blank"
                 class="header--custom-text">{{i18n.powered_by}}</a>
+                <a href="https://galarreta.co/" target="_blank"><p class="header--custom-text">Developed by GALARRETA®</p></a>
               {{#if linkToLegalNotices}}
               <a href="{{linkToLegalNotices.href}}" class="header--custom-text">{{linkToLegalNotices.label}}</a>
               {{/if}}
